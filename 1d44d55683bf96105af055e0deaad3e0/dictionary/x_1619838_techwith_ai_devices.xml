@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="671da9d28373d6105af055e0deaad335" extends="cmdb_ci" label="AI devices" max_length="40" name="x_1619838_techwith_ai_devices" type="collection"/>
+</database>
