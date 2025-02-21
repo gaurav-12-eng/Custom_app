@@ -1,3 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="671da9d28373d6105af055e0deaad335" extends="cmdb_ci" label="AI devices" max_length="40" name="x_1619838_techwith_ai_devices" type="collection"/>
+    <element db_object_id="671da9d28373d6105af055e0deaad335" extends="cmdb_ci" label="AI devices" max_length="40" name="x_1619838_techwith_ai_devices" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Device Category" max_length="40" name="device_category" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Self Drone" sequence="0" value="self drone"/>
+                <element inactive_on_update="false" label="AI Glasses" sequence="1" value="ai glasses"/>
+                <element inactive_on_update="false" label="Smart Hats" sequence="2" value="smart hats"/>
+                <element inactive_on_update="false" label="Environmental sensor" sequence="3" value="environmental sensor"/>
+            </choice>
+        </element>
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Price" max_length="20" name="u_price" type="price"/>
+    </element>
 </database>
