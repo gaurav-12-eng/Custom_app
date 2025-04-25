@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="b726599e83ff96105af055e0deaad37a" extends="task" label="Device Request" max_length="40" name="x_1619838_techwith_device_request" type="collection">
+    <element audit="true" db_object_id="b726599e83ff96105af055e0deaad37a" extends="task" label="Device Request" max_length="40" name="x_1619838_techwith_device_request" type="collection">
         <element attributes="edge_encryption_enabled=true" choice="1" label="Request type" max_length="40" name="u_request_type" type="string">
             <choice>
                 <element inactive_on_update="false" label="GO Request" sequence="0" value="go_request"/>
