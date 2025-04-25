@@ -42,6 +42,20 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-02-21 06:14:21</sys_updated_on>
         </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-04-25 06:13:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>392d60f683412210052cb8c6feaad30e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1619838_techwith_device_request" name="x_1619838_techwith_device_request" sys_domain="global" view="Default view">e4fd73da833fd6105af055e0deaad3f6</sys_ui_form>
+            <sys_ui_section caption="Activity" display_value="Activity" name="x_1619838_techwith_device_request" sys_domain="global" view="Default view">f92d20f683412210052cb8c6feaad3a6</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-04-25 06:13:20</sys_updated_on>
+        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_1619838_techwith_device_request</name>
             <roles/>

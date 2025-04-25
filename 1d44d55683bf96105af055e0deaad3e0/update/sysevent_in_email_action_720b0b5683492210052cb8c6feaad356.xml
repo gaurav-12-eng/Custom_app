@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_in_email_action">
+    <sysevent_in_email_action action="INSERT_OR_UPDATE">
+        <action>record_action</action>
+        <active>true</active>
+        <assignment_operator/>
+        <condition_script/>
+        <description/>
+        <event_name>email.read</event_name>
+        <filter_condition table="sys_email">subjectLIKEDR app^EQ<item endquery="false" field="subject" goto="false" newquery="false" operator="LIKE" or="false" value="DR app"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <from/>
+        <name>Create Request For App</name>
+        <order>10</order>
+        <reply_email/>
+        <required_roles/>
+        <script><![CDATA[(function runAction(/*GlideRecord*/ current, /*GlideRecord*/ event, /*EmailWrapper*/ email, /*ScopedEmailLogger*/ logger, /*EmailClassifier*/ classifier) {
+
+	// Implement email action here
+	/*var body = email.body_text;
+	var emailFrom = email.from;
+
+	current.description = body.trim();
+	current.short_description = emailFrom;*/
+	var body1 = email.body_text.toLowerCase().includes('po');
+	var body2 = email.body_text.toLowerCase().includes('go');
+	//var body3 = email.body_text.toLowerCase().includes('');
+
+	current.state = 1;
+	current.u_channel = 'email_channel';
+
+	if(body1){
+		current.u_request_type = 'po_request';
+	}else if(body2){
+		current.u_request_type = 'go_request';
+
+	}else{
+		current.u_request_type = 'ca_request';
+	}
+
+
+})(current, event, email, logger, classifier);]]></script>
+        <stop_processing>false</stop_processing>
+        <sys_class_name>sysevent_in_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-24 04:32:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>720b0b5683492210052cb8c6feaad356</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Create Request For App</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Techwithpri" source="x_1619838_techwith">1d44d55683bf96105af055e0deaad3e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Techwithpri">1d44d55683bf96105af055e0deaad3e0</sys_scope>
+        <sys_update_name>sysevent_in_email_action_720b0b5683492210052cb8c6feaad356</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-25 06:05:05</sys_updated_on>
+        <table>x_1619838_techwith_device_request</table>
+        <template>u_business_requirementsDYNAMIC367bf121ef3221002841f7f775c0fbe2^u_requestorDYNAMIC2fd8e97bef3221002841f7f775c0fbc1^EQ</template>
+        <type>new</type>
+    </sysevent_in_email_action>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>720b0b5683492210052cb8c6feaad356</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-24 04:32:58</sys_created_on>
+        <sys_id>319c8f5683c52210052cb8c6feaad377</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-24 04:32:58</sys_updated_on>
+        <table>sysevent_in_email_action</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

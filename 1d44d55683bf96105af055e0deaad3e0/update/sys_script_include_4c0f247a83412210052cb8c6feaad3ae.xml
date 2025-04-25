@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1619838_techwith.AiDevices</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>AiDevices</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var AiDevices = Class.create();
+AiDevices.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	getAiDetails: function(){
+
+		var device = this.getParameter('sysparm_device');
+		var gr = new GlideRecord('x_1619838_techwith_ai_devices');
+		gr.addQuery('sys_id', device);
+		gr.query();
+		if(gr.next()){
+			var x = {
+
+				price: gr.getValue('u_price'),
+				model: gr.getValue('model_number'),
+				warrenty: gr.getValue('warranty_expiration'),
+				description: gr.getValue('short_description')
+
+
+
+			};
+			return JSON.stringify(x);
+		}
+
+		
+
+	},
+
+    type: 'AiDevices'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-25 06:29:35</sys_created_on>
+        <sys_id>4c0f247a83412210052cb8c6feaad3ae</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>AiDevices</sys_name>
+        <sys_package display_value="Techwithpri" source="x_1619838_techwith">1d44d55683bf96105af055e0deaad3e0</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Techwithpri">1d44d55683bf96105af055e0deaad3e0</sys_scope>
+        <sys_update_name>sys_script_include_4c0f247a83412210052cb8c6feaad3ae</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-25 06:40:14</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>4c0f247a83412210052cb8c6feaad3ae</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-25 06:29:34</sys_created_on>
+        <sys_id>e7d034ba83412210052cb8c6feaad3d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-25 06:29:34</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
