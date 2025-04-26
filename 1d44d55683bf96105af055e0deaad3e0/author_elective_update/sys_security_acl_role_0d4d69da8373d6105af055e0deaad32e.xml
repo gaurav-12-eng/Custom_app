@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-20 18:18:01</sys_created_on>
+        <sys_id>0d4d69da8373d6105af055e0deaad32e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1619838_techwith_ai_devices.x_1619838_techwith.ai_devices_user</sys_name>
+        <sys_package display_value="Techwithpri" source="x_1619838_techwith">1d44d55683bf96105af055e0deaad3e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Techwithpri">1d44d55683bf96105af055e0deaad3e0</sys_scope>
+        <sys_security_acl display_value="x_1619838_techwith_ai_devices">854d69da8373d6105af055e0deaad32b</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_0d4d69da8373d6105af055e0deaad32e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-20 18:18:01</sys_updated_on>
+        <sys_user_role display_value="x_1619838_techwith.ai_devices_user" name="x_1619838_techwith.ai_devices_user">784de9568373d6105af055e0deaad3d1</sys_user_role>
+    </sys_security_acl_role>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Techwithpri">1d44d55683bf96105af055e0deaad3e0</application>
+        <file_path/>
+        <instance_id>7b3bf4864737d6106f9ce676706d4316</instance_id>
+        <instance_name>dev297006</instance_name>
+        <name>sys_security_acl_role_0d4d69da8373d6105af055e0deaad32e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-02-20 18:18:01</sys_created_on>
+        <sys_id>0d4d69da8373d6105af055e0deaad32e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1619838_techwith_ai_devices.x_1619838_techwith.ai_devices_user</sys_name>
+        <sys_package display_value="Techwithpri" source="x_1619838_techwith">1d44d55683bf96105af055e0deaad3e0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Techwithpri">1d44d55683bf96105af055e0deaad3e0</sys_scope>
+        <sys_security_acl display_value="x_1619838_techwith_ai_devices">854d69da8373d6105af055e0deaad32b</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_0d4d69da8373d6105af055e0deaad32e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-02-20 18:18:01</sys_updated_on>
+        <sys_user_role display_value="x_1619838_techwith.ai_devices_user" name="x_1619838_techwith.ai_devices_user">784de9568373d6105af055e0deaad3d1</sys_user_role>
+    </sys_security_acl_role>
+</record_update>]]></payload>
+        <payload_hash>1241050202</payload_hash>
+        <record_name>x_1619838_techwith_ai_devices.x_1619838_techwith.ai_devices_user</record_name>
+        <reverted_from/>
+        <source>752f7cf693452210786e7af08bba10d1</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-25 07:32:17</sys_created_on>
+        <sys_id>d63f7c3a93452210786e7af08bba102c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1966bdc8b8e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-25 07:32:17</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>963f7c3a12452210c74f97739c013e2c</update_guid>
+        <update_guid_history>963f7c3a12452210c74f97739c013e2c:1241050202</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1619838_techwith_ai_devices.x_1619838_techwith.ai_devices_user">2be50f4793012210786e7af08bba1012</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-26 11:59:19</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>b2e479d2a0214739bf050fd2d8db8c89</sys_id>
+        <sys_metadata>0d4d69da8373d6105af055e0deaad32e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1619838_techwith_ai_devices.x_1619838_techwith.ai_devices_user</sys_name>
+        <sys_package display_value="Techwithpri" source="x_1619838_techwith">1d44d55683bf96105af055e0deaad3e0</sys_package>
+        <sys_parent display_value="x_1619838_techwith_ai_devices">854d69da8373d6105af055e0deaad32b</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Techwithpri">1d44d55683bf96105af055e0deaad3e0</sys_scope>
+        <sys_scope_delete display_value="">03a17fe036f24be88522f5a32370e440</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_0d4d69da8373d6105af055e0deaad32e</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_0d4d69da8373d6105af055e0deaad32e">d63f7c3a93452210786e7af08bba102c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-26 11:59:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
