@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="b726599e83ff96105af055e0deaad37a" extends="task" label="Device Request" max_length="40" name="x_1619838_techwith_device_request" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Delivery Date" max_length="40" name="u_delivery_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Model" max_length="40" name="u_dr_model" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Warranty Expiration" max_length="40" name="u_dr_warnnty_ex" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Business Requirements" max_length="5000" name="u_business_requirements" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Request type" max_length="40" name="u_request_type" type="string">
             <choice>
-                <element inactive_on_update="false" label="GO Request" sequence="0" value="go_request"/>
                 <element inactive_on_update="false" label="CA Request" sequence="1" value="ca_request"/>
                 <element inactive_on_update="false" label="PO Request" sequence="2" value="po_request"/>
+                <element inactive_on_update="false" label="GO Request" sequence="0" value="go_request"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" label="Quantity" max_length="40" name="u_quantity" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Model" max_length="40" name="u_dr_model" type="string"/>
+        <element attributes="encode_utf8=false" label="AI Device" mandatory="true" max_length="32" name="u_ai_device" reference="x_1619838_techwith_ai_devices" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Device Description" max_length="40" name="u_dr_description" type="string"/>
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Price" max_length="20" name="u_dr_price" type="price"/>
+        <element attributes="encode_utf8=false" label="Assignment Group" mandatory="true" max_length="32" name="u_assignement_group" reference="sys_user_group" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Quantity" max_length="40" name="u_quantity" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Channel" max_length="40" name="u_channel" type="string">
             <choice>
                 <element inactive_on_update="false" label="Web" sequence="1" value="web"/>
                 <element inactive_on_update="false" label="Email" sequence="0" value="email_channel"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" label="Warranty Expiration" max_length="40" name="u_dr_warnnty_ex" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Delivery Date" max_length="40" name="u_delivery_date" type="glide_date"/>
-        <element attributes="encode_utf8=false" label="AI Device" mandatory="true" max_length="32" name="u_ai_device" reference="x_1619838_techwith_ai_devices" type="reference"/>
-        <element attributes="encode_utf8=false" label="Assignment Group" mandatory="true" max_length="32" name="u_assignement_group" reference="sys_user_group" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" label="Business Requirements" max_length="5000" name="u_business_requirements" type="string"/>
-        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Price" max_length="20" name="u_dr_price" type="price"/>
         <element attributes="encode_utf8=false" label="Requestor" mandatory="true" max_length="32" name="u_requestor" reference="sys_user" type="reference"/>
     </element>
 </database>
